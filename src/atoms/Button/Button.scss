@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+.btn-primary {
+    color: $white;
+    font-size: 14px;
+    background-color: $teal-blue;
+    border: none;
+    min-width: 100px;
+    &:focus {
+        background-color: $topaz;
+        box-shadow: none !important;
+        border: none;
+    }
+    &:disabled,
+    &:disabled:focus {
+        background-color: $off-white;
+        color: $black;
+        border: solid 1px $light-grey;
+    }
+    &:not(:disabled):not(.disabled):hover {
+        background-color: $topaz;
+        box-shadow: none !important;
+        border: none;
+    }
+    &:not(:disabled):not(.disabled):active {
+        @extend .btn-primary;
+    }
+}

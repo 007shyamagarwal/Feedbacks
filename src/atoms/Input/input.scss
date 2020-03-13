@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+$blockName: '.input-container';
+.form-control {
+    font-size: 14px;
+}
+
+#{$blockName} {
+    height: 35px;
+    padding-top: 0.5rem;
+    color: $black;
+    font-size: 14px;
+    &--image {
+        padding-left: 2.5rem;
+    }
+    &:focus {
+        border: 1px solid $teal-blue;
+        box-shadow: none;
+        color: $black;
+    }
+}

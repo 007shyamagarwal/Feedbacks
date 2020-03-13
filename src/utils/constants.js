@@ -1,0 +1,1 @@
+export const POST_FEEDBACK = 'POST_FEEDBACK';
