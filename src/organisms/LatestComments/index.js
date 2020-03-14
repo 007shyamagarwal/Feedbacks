@@ -9,7 +9,7 @@ const Comments = ({ latestComments }) => {
     <Container className="message-container">
       {latestComments.map(message => (
         <Row style={{ margin: '0' }} key={message.message}>
-          {`${message.name} :  ${message.comment}`}
+          <strong>{`${message.name}`}</strong> : {`${message.comment}`}
         </Row>
       ))}
       <br />

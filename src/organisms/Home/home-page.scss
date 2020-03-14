@@ -26,14 +26,17 @@
             margin-bottom: 10px;
         }
     }
-    // @keyframes animatedBird {
-    //     from {
-    //         background-position: 0px 0px, 30px 80px, 0 0;
-    //     }
-    //     to {
-    //         background-position: 00px 0px, 30px 20px, 100% 0;
-    //     }
-    // }
+    @keyframes animate-cards {
+        from {
+            width: 0%;
+            display: none;
+            transform: translateX(-40%);
+        }
+        to {
+            display: flex;
+            width: 35%;
+        }
+    }
     .calendar {
         position: absolute;
         top: 0;
@@ -53,16 +56,23 @@
         height: 150px;
         background-image: url(transactions.png);
         background-repeat: no-repeat;
+        animation-name: animate-cards;
+        animation-duration: 4s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
     }
     .statement {
         position: absolute;
-        border: 1px solid black;
+        // border: 1px solid black;
         top: -50px;
         height: 300px;
         right: -25px;
         width: 35%;
         background-image: url(Statements.png);
         background-repeat: no-repeat;
+        animation-name: animate-cards;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
     }
     .vector-3 {
         position: absolute;
@@ -72,6 +82,9 @@
         width: 35%;
         background-image: url(Vector3.png);
         background-repeat: no-repeat;
+        animation-name: animate-cards;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
     }
     .vector-4 {
         position: absolute;
@@ -81,8 +94,9 @@
         width: 35%;
         background-image: url(Vector4.png);
         background-repeat: no-repeat;
+        animation-name: animate-cards;
+        animation-duration: 4s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
     }
-    // .animate-area {
-    //     animation: animatedBird 4s linear infinite;
-    // }
 }
